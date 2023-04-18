@@ -9,21 +9,21 @@ type Input struct {
 	num2 int
 }
 
-func (data Input) Addition() int {
+func (data *Input) Addition() int {
 	return data.num1 + data.num2
 }
 
-func (data Input) Substraction() int {
+func (data *Input) Substraction() int {
 	return data.num1 - data.num2
 
 }
 
-func (data Input) Multiplication() int {
+func (data *Input) Multiplication() int {
 	return data.num1 * data.num2
 
 }
 
-func (data Input) Division() int {
+func (data *Input) Division() int {
 	return data.num1 / data.num2
 
 }
